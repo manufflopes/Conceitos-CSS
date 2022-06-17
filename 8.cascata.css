@@ -1,0 +1,23 @@
+#my-title {
+    color: turquoise;
+}
+
+.title {
+    color: greenyellow;
+}
+
+h1 {
+    color: magenta;
+}
+
+h1 {
+    color: orange !important;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+* {
+    color: crimson;
+}

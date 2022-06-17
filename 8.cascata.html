@@ -1,0 +1,40 @@
+<!--
+    # A Cascata (cascading)
+A escolha do browser de qual regra quer aplicar, caso haja muitas regras para o mesmo elemento.
+*Seu estilo é lido de cima para baixo.
+É levado em consideração 3 fatores:
+
+1.Origem do estilo
+    inline> tag style> tag link 
+
+2.Especificidade
+    É um cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados. 
+    0. universal selector, combinators e negation pseudo-class (:not())
+    1.Element type selector e pseudo-elements (::before, ::after)
+    10.classes e attribute selectors ([type="radio"])
+    100.ID selector
+    1000.Inline
+
+3.Importância
+    A regra !important 
+    * cuidado, evite o uso
+    * não é considerado uma boa prática
+    * quebra o fluxo natural da cascata
+-->
+<!-- Origem estilo -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="8.cascata.css" />
+
+        <h1 class="title" id="my-title">Título<strong> alôuuuu </strong></h1>
+        <p><strong>Parágrafo</strong></p>
+        <h1>Título 2</h1>
+    </body>
+</html>

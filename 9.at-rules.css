@@ -1,0 +1,33 @@
+body {
+    /* background-color: blueviolet;
+    background-image: url("https://www.imagensanimadas.com/data/media/1443/pluto-imagem-animada-0096.gif");
+    background-repeat: no-repeat;
+    background-position: center top; */ 
+
+    background: url('https://www.imagensanimadas.com/data/media/1443/pluto-imagem-animada-0096.gif')
+        blueviolet no-repeat center top;
+}
+
+h1 {
+    color: white;
+    /* border-color: white;
+    border-width: 3px;
+    border-style: dashed */
+    border: 3px solid white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+@media (min-width: 500px) {
+    /*rules here qndo virmos responsividade*/
+}
+
+@font-face {
+    /*rules here para fontes externas*/
+}
+
+@keyframes nameofanimation {
+    /*rules here pa
+    
+    ra animação*/
+}

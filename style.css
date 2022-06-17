@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+
+#teste4 h1 {
+    color: rgb(150, 255, 80);
+    font-family: 'Fascinate', cursive;
+}
+#teste4 strong {
+    color: rgb(39, 58, 230);
+    font-family: 'Fascinate', cursive;
+}
+
+
+#teste3 h1 {
+    color: coral;
+}
+#teste3 strong {
+    color: turquoise;
+}
+
