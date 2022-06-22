@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Box-model.css" />
+        <title>Uma caixa dentro da outra</title>
+    </head>
+    <body>
+        <h1><strong>Box model</strong></h1>
+            <p>- Fundamental para fazer layouts e para a web</p>
+            <p>- Maior facilidaade para aplicar o CSS</p>
+        <h3><strong>> O que é ?</strong></h3>
+            <p>Uma caixa retagular que tem propriedades de uma caixa 2D.</p>
+            <table>
+                <thead class="tabela-cabecalho"></thead>
+                <tbody class="tabela-corpo">
+                    <tr>
+                        <th>- Tamanho (largura X altura)</th>
+                        <th>width | height</th>
+                    </tr>
+                    <th>- Conteudo</th>
+                    <th>content</th>
+                    <tr>
+                        <th>- Bordas</th>
+                        <th>border</th>
+                    </tr>
+                    <tr>
+                        <th>- Preenchimento interno</th>
+                        <th>padding</th>
+                    </tr>
+                    <tr>
+                        <th>- Espaços fora da caixa</th>
+                        <th>margin</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>*Cada elemento na sua página sera considerado uma caixa.*</p>
+        <h3><strong>> Box-sizing</strong></h3>
+            <p>Como será calculado o tamanho total da caixa ?</p>
+            <span>- content-box | border-box;</span>
+                <div><p>
+                    <strong>CSS</strong> é incrivel !!!
+                </p></div>
+        <h3>> Display: block vs Display: inline</h3>
+            <p>- Como as caixas se comportam em relação as outras caixas</p>
+            <p>- Comportamento externo das caixas</p>
+            <table>
+                <thead class="tabela-cabecalho">
+                    <tr>
+                        <th>** Block **</th>
+                        <th>** In Line **</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-corpo">
+                    <tr>
+                        <th>Ocupa toda linha, colocando o proximo elemento abaixo desse  </th>
+                        <th>Elemento ao lado do outro</th>
+                    </tr>
+                    <tr>
+                        <th>Width e Height sao respeitados</th>
+                        <th>Width e Height não funcionam</th>                
+                    </tr>                    
+                    <tr>
+                        <th>Padding, margin, border irão funcionar normalmente</th>                        
+                        <th>Somente valores horizontais de margin, padding e border</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Exemplos</p>
+            <span>
+                <p>Block: p / div / section, todos os headings h1 / h2... 
+                    <p>In line: a / strong / span / em
+                    </p>
+                </p>
+            </span>
+        <h3> > Margin</h3>
+            <p></p>
+            <span>
+                <p> margin-top | margin-right | margin-bottom | margin-left 
+                    <p>values: length | percentage | auto </p>
+                </p>
+            </span>
+            <div class="shorthand1">Caixa 1</div>
+            <div class="shorthand2">Caixa 2</div>
+            <div class="shorthand3">Caixa 3</div>
+            <div class="shorthand4">Caixa 4</div>
+            <p>Cuidado com o margin collapsing (top se junta ao bottom)</p>
+        <h3>> Padding</h3>
+            <p>Preenchimento interno da caixa</p>
+            <span>
+                <p>
+                    padding-top | padding-right | padding-bottom | padding-left
+                    <p>
+                        <strong>values:</strong> length | percentage 
+                    </p>
+                </p>
+            </span>
+            <div class="shorthand5">Caixa 1</div>
+            <div class="shorthand6">Caixa 2</div>
+            <div class="shorthand7">Caixa 3</div>
+            <div class="shorthand8">Caixa 4</div>
+            <p>Padding poderá causar diferença na largura de um elemento </p>
+        <h3>>Border e (outline)</h3>
+            <span>
+                <p>As bordas da caixa</p>
+                <p><strong>value: </strong> border-style | border-width | border-color </p>
+                <p><strong>style: </strong> solid | dotted | dashed | double | groove | ridge | inset | outset </p>
+                <p><strong>width: </strong> length </p>
+                <p><strong>color: </strong>color</p>
+            </span>
+            <div class="bordas1"> Bordas da Caixa 1 </div>
+        <h3>> E outline ? </h3>
+            <span> Difere em 4 sentidos: </span>
+            <p>- Não modifica o tamanho da caixa pois não é parte do Box Model
+                <p>- Poderá ser diferente de retangular
+                    <p>- Não permite ajustes individuais
+                        <p>- Mais usado pelo user agent para acessibilidade
+                        </p>
+                    </p>
+                </p>
+            </p>               
+    </body>
+</html>

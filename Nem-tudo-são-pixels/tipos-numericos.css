@@ -19,8 +19,13 @@ body {
     background-image: url(http://source.unsplash.com/random);
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 .box::after {
     content: 'Aqui vem uma mensagem';
-    color: crimson;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
