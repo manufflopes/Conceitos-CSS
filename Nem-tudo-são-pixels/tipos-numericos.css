@@ -1,0 +1,26 @@
+.tabela-corpo {
+    background-color: pink;
+    text-align: left;
+    width: 40%;
+}
+.tabela-cabecalho {
+    background-color: lightgray;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    width: fit-content;
+}
+.box {
+    height: calc(100% - 10px);
+    width: 100%;
+    background-image: url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box::after {
+    content: 'Aqui vem uma mensagem';
+    color: crimson;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="tipos-numericos.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Tipos numéricos</h1>
+        <p><strong>* integer</strong> numero inteiro com -10 ou 223</p>
+        <p><strong>* number</strong> numero decimal como -2.4, 64 ou 0.234</p>
+        <p>
+            <strong>* dimension</strong> é um <strong>number</strong> com uma
+            unidade junto: 90deg, 2s, 8px
+        </p>
+        <p>
+            <strong>* percentagem</strong> representa a fraçao de outro numero
+            50%
+        </p>
+        <h3>> Unidades comuns</h3>
+        <p>
+            <strong>* length </strong> representa um valor de distancia: px, em,
+            vw
+        </p>
+        <p>
+            <strong>* angle </strong> representa um angulo: deg, rad, 0.25turn
+        </p>
+        <p><strong>* time </strong> representa um tempo: s,ms</p>
+        <p>
+            <strong>* resolution </strong> representa resoluções para
+            dispositivos: dpi
+        </p>
+        <h3>> Distâncias absolutas: <strong>length</strong></h3>
+        <span>São fixas e não alteram o seu valor.</span>
+        <p></p>
+        <table class="tabela-corpo">
+            <thead class="tabela-cabecalho">
+                <tr>
+                    <th>Unidade</th>
+                    <th>Nome</th>
+                    <th>Equivalência</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Cm</th>
+                    <th>Centímetros</th>
+                    <th>1cm = 96px/2.54</th>
+                </tr>
+                <tr>
+                    <th>In</th>
+                    <th>Inches (polegadas)</th>
+                    <th>1in = 2.54cm = 96px</th>
+                </tr>
+                <tr>
+                    <th>Px</th>
+                    <th>Pixels</th>
+                    <th>1px = 1/96th of 1 in</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>A unidade mais comum e mais utilizada é **px**</p>
+        <p>não recomendado usar cm porque pode ficar distorcido na tela</p>
+        <h3>><strong> Distancias relativas</strong></h3>
+        <span
+            >São relativas a algum outro valor, pode ser o elemento pai, ou
+            root, ou o tamanho da tela.</span
+        >
+        <span>
+            *Benefício: maior adaptação aos diferentes tipos de tela
+        </span>
+        <table class="tabela-corpo">
+            <thead class="tabela-cabecalho">
+                <tr>
+                    <th>Unidade</th>
+                    <th>Relativo a</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>em</th>
+                    <th>tamanho da fonte do pai</th>
+                </tr>
+                <tr>
+                    <th>rem</th>
+                    <th>tamanho da fonte do elemento raiz (root/html)</th>
+                </tr>
+                <tr>
+                    <th>vw</th>
+                    <th>1% da viewport width (largura)</th>
+                </tr>
+                <tr>
+                    <th>vh</th>
+                    <th>1% da viewport height (altura)</th>
+                </tr>
+            </tbody>
+        </table>
+        <h3><strong>> Porcentagens %</strong></h3>
+        <span>
+            * Em muitos casos é tratdo da mesma maneira que as distâncias <length>
+            </span>
+        <p>
+            * Sempre será relativo a algum valor
+        </p>
+        <h3><strong>> Posições</strong></h3>
+        <span>position com o <> ,data type, tem sentido de valor</span>
+        <p>Repressenta um conjunto de coordenadas 2D: top, right, bottom, left e center</p>
+        <p>* Usado para alguns tipos de propriedades</p>
+        <p>* não confundir com a propriedade <strong>`position`</strong></p>
+        <span>Exemplo:</span>
+        <div class="box"></div>
+        <p></p>
+        <h3><strong>> Funções</strong></h3>
+        <p>Em programação funções são reconhecidas por causar um reaproveitamento de código. Vão nos servir como valores</p>
+        <p>rgb ( utilizada para cores)</p>
+        <p>hsl ()</p>
+        <p>url ( para importar sites)</p>
+        <p>calc ( para calcular medidas, etc)</p>
+        <h3><strong>> String e identificadores</strong></h3>
+        <p>*strings: texto envolto em aspas</p>
+        <p>* identificadores: red, black, gold</p>
+    
+
+
+        
+    </body>
+</html>
